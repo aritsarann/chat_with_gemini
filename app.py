@@ -17,8 +17,8 @@ data_dict_text = '\n'.join('- ' + data_dict_df['column_name'] +
 
 
 try:
-    #key = st.secrets['gemini_api_key']
-    key = 'AIzaSyCDsZOAFz_WueVa7ciwtcNNsywOaaIwnz0'
+    key = st.secrets['gemini_api_key']
+    
     genai.configure(api_key=key)
     model = genai.GenerativeModel('gemini-2.0-flash-lite')
 
