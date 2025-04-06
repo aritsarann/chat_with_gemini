@@ -16,7 +16,7 @@ try:
         else:
             return role
         
-    for message in st. st.session_state.chat.history:
+    for message in st.session_state.chat.history:
         with st.chat_message(role_to_streamlit(message.role)):
             st.markdown(message.parts[0].text)
 
